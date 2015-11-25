@@ -10,6 +10,18 @@
 		F4E672B71BFF00C900447D5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E672B61BFF00C900447D5E /* main.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		F4E672BD1BFF033200447D5E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.intel.compilers.icc.16_0_0;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		F4E672B11BFF00C900447D5E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -74,6 +86,7 @@
 				F4E672B11BFF00C900447D5E /* CopyFiles */,
 			);
 			buildRules = (
+				F4E672BD1BFF033200447D5E /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -144,6 +157,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLD_LIBRARY_PATH = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -160,6 +174,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/intel/parallel_studio_xe_2016.1.043/compilers_and_libraries_2016/mac/mkl/include,
+				);
+				ICC_MKL = nonthreaded;
+				LIBRARY_SEARCH_PATHS = /opt/intel/parallel_studio_xe_2016.1.043/compilers_and_libraries_2016/mac/mkl/lib/;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -186,6 +207,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLD_LIBRARY_PATH = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -196,6 +218,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/intel/parallel_studio_xe_2016.1.043/compilers_and_libraries_2016/mac/mkl/include,
+				);
+				ICC_MKL = nonthreaded;
+				LIBRARY_SEARCH_PATHS = /opt/intel/parallel_studio_xe_2016.1.043/compilers_and_libraries_2016/mac/mkl/lib/;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -205,6 +234,14 @@
 		F4E672BB1BFF00C900447D5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/intel/parallel_studio_xe_2016.1.043/compilers_and_libraries_2016/mac/mkl/include,
+				);
+				ICC_LANG_OPENMP = disable;
+				ICC_MKL = nonthreaded;
+				LIBRARY_SEARCH_PATHS = /opt/intel/parallel_studio_xe_2016.1.043/compilers_and_libraries_2016/mac/mkl/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +249,14 @@
 		F4E672BC1BFF00C900447D5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/intel/parallel_studio_xe_2016.1.043/compilers_and_libraries_2016/mac/mkl/include,
+				);
+				ICC_LANG_OPENMP = disable;
+				ICC_MKL = nonthreaded;
+				LIBRARY_SEARCH_PATHS = /opt/intel/parallel_studio_xe_2016.1.043/compilers_and_libraries_2016/mac/mkl/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
