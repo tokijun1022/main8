@@ -29,7 +29,7 @@ int main(int argc,char *argv[])
     double  ***E;
     double _Complex **u,**v,**udash,**vdash;
     double T=20.0;
-    double Lcal=30.0;
+    double Lcal=60.0;
     double Ly=29.176886;
     double Lz=29.176886;
     double _Complex delta0[2*Nwide],delta[2*Nwide],phase,ubar0,vbar0,f0,g0,ubar,vbar,ufft[2*Nwide],vfft[2*Nwide],deltcheck,plus;
